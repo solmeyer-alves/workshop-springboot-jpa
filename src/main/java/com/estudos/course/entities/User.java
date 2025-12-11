@@ -35,13 +35,16 @@ public class User implements Serializable{
 	public User() {
 	}
 
-	public User(Long id, String name, String email, String phone, String passwrod) {
+	public User(Long id, String name, String email, String phone, String password) {
+		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
 		this.phone = phone;
-		this.password = passwrod;
+		this.password = password;
 	}
+	
+
 
 	public Long getId() {
 		return id;
@@ -75,12 +78,12 @@ public class User implements Serializable{
 		this.phone = phone;
 	}
 
-	public String getPasswrod() {
+	public String getPassword() {
 		return password;
 	}
 
-	public void setPasswrod(String passwrod) {
-		this.password = passwrod;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public List<Order> getOrders() {
