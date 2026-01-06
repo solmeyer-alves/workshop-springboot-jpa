@@ -19,7 +19,7 @@ import com.estudos.entities.User;
 import com.estudos.services.UserService;
 
 @RestController
-@RequestMapping(value = "/users")
+@RequestMapping("/users")
 public class UserController {
 	
 	@Autowired
